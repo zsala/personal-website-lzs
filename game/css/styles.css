@@ -320,11 +320,20 @@ li {
   text-align: center;
 }
 
+.feature-card .feature-icon {
+  overflow: hidden;
+}
+
 .feature-icon {
   width: 64px;
   height: 64px;
   margin: 0 auto var(--spacing-sm) auto;
   display: block;
+  object-fit: cover;
+  object-position: top left;
+  transform: scale(2);
+  transform-origin: center;
+  clip-path: inset(0 50% 50% 0);
 }
 
 /* Footer */
